@@ -5,11 +5,10 @@ This is a game program written in Python
 Please see below for a breakdown of the different files in this repository:
 
 **timer.py** is a simple Python script allowing users to set timer duration. Upon timer expiry, the user will see the time-up meme.
-- timer.py uses the **time library** to help keep track of time and the **pillow library** to facilitate the meme display.
 
-**Pseudocode** is a document that allows us to see the logic and flow of our code before we begin programming.
+**Pseudocode** is a document that allows us to see the logic and flow of our code before we begin programming. (Both Zaaraaa and Anaya have made commits to this file)
   
-**GameCode** is the python code for the game Nerve of Steel. 
+**GameCode** is the python code for the game Nerve of Steel. (Both Zaaraaa and Anaya have made commits to this file)
 It is a party game where players sit in a circle and when the game begins:
 
 1. The program displays "Players stand"
