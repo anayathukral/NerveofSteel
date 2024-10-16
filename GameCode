@@ -35,5 +35,4 @@ def nerve_of_steel_game():
         print("No one sat down. No winner.")
 
 # Run the game
-if __name__ == "__main__":
     nerve_of_steel_game() 
