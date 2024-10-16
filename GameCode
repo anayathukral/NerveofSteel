@@ -24,17 +24,3 @@ def nerve_of_steel_game():
             seated_players.append(player_name)
             print(f"{player_name} has sat down.")
     
-    # Time is up
-    print("Time's Up.")
-    
-    # Determine the winner
-    if seated_players:
-        winner = seated_players[-1]  # Last person to sit down wins
-        print(f"The winner is: {winner}")
-    else:
-        print("No one sat down. No winner.")
-
-# Run the game
-if __name__ == "__main__":
-    nerve_of_steel_game()
-
