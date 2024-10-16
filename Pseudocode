@@ -7,3 +7,10 @@ WHILE the program is sleeping:
     BREAK the loop
   ELSE:
     ADD input to list labelled "seated_players"
+DISPLAY "Time's Up." 
+IF seated_players is NOT EMPTY: 
+  SET winner TO last player in seated_players 
+  DISPLAY "The winner is: " + winner 
+ELSE: 
+  DISPLAY "No one sat down. No winner." 
+END Nerve_of_Steel_Game
