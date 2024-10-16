@@ -1,0 +1,9 @@
+Start Nerve of Steel Game 
+Display "Players stand"
+Sleep for random_time between 10 to 25 seconds
+WHILE the program is sleeping:
+  PROMPT user to "Enter the names of players that sat down (or 'done' to finish list):"
+  IF input is 'done':
+    BREAK the loop
+  ELSE:
+    ADD input to list labelled "seated_players"
