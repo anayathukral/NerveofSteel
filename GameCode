@@ -1,1 +1,40 @@
+import time
+import random
+
+def nerve_of_steel_game():
+    print("Players stand")
+    
+    # Generate a random sleep time between 10 and 25 seconds
+    sleep_time = random.randint(10, 25)
+    print(f"Sleeping for {sleep_time} seconds. Players can sit down...")
+    
+    # Create an empty list to track seated players
+    seated_players = []
+    
+    # Start a timer
+    start_time = time.time()
+    
+    # While the time is still running, allow players to enter their names
+    while (time.time() - start_time) < sleep_time:
+        player_name = input("Enter name of player who sat down (or 'done' to finish): ")
+        
+        if player_name.lower() == 'done':
+            break
+        else:
+            seated_players.append(player_name)
+            print(f"{player_name} has sat down.")
+    
+    # Time is up
+    print("Time's Up.")
+    
+    # Determine the winner
+    if seated_players:
+        winner = seated_players[-1]  # Last person to sit down wins
+        print(f"The winner is: {winner}")
+    else:
+        print("No one sat down. No winner.")
+
+# Run the game
+if __name__ == "__main__":
+    nerve_of_steel_game()
 
