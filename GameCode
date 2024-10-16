@@ -2,6 +2,8 @@ import time
 import random
 from PIL import Image
 
+im = Image.open("times-up.jpeg")
+
 def nerve_of_steel_game():
     print("Players stand")
     
@@ -27,7 +29,10 @@ def nerve_of_steel_game():
    
 # Time is up
     print("Time's Up.")
-    
+
+# Show the image
+im.show()
+
     # Determine the winner
     if seated_players:
         winner = seated_players[-1]  # Last person to sit down wins
