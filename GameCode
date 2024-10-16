@@ -1,11 +1,12 @@
 import time
 import random
+from PIL import Image
 
 def nerve_of_steel_game():
     print("Players stand")
     
-    # Generate a random sleep time between 10 and 25 seconds
-    sleep_time = random.randint(10, 25)
+    # Ask user to set a random timer between 10-25 seconds
+    set_time = int(input("Please set your timer in seconds (between 10 and 25 recommended): "))
     print(f"Sleeping for {sleep_time} seconds. Players can sit down...")
     
     # Create an empty list to track seated players
@@ -15,7 +16,7 @@ def nerve_of_steel_game():
     start_time = time.time()
     
     # While the time is still running, allow players to enter their names
-    while (time.time() - start_time) < sleep_time:
+    while (time.time() - start_time) < set_time:
         player_name = input("Enter name of player who sat down (or 'done' to finish): ")
         
         if player_name.lower() == 'done':
